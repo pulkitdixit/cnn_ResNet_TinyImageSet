@@ -124,7 +124,7 @@ class ResNet(nn.Module):
     self.maxpool = nn.AdaptiveMaxPool2d((1,1))
     self.drop_out2 = nn.Dropout(0.1)
     #self.linear = nn.Linear(32*block.expansion, 100)
-    self.linear = nn.Linear(256, 100)
+    self.linear = nn.Linear(256, 200)
     
   def make_layer(self, block, out_channels, layer_len, stride = 1):
     downsample = None
